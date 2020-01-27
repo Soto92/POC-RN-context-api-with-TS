@@ -37,7 +37,7 @@ const style = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     height: 30,
-    width: 50
+    width: 58
   }
 });
 
