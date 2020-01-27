@@ -15,7 +15,6 @@ import {
 import { StatusBar } from "react-native";
 
 const App = () => {
-  
   const [client, setClient] = useState<Client>({
     name: "",
     gender: "",
@@ -35,9 +34,9 @@ const App = () => {
   });
   return (
     <ClientContext.Provider value={{ client, setClient }}>
-       <StatusBar backgroundColor="#007ACC" barStyle="light-content" />
       <ProductContext.Provider value={{ products, setProducts }}>
         <ServicesContext.Provider value={{ services, setServices }}>
+          <StatusBar backgroundColor="#007ACC" barStyle="light-content" />
           <Router />
         </ServicesContext.Provider>
       </ProductContext.Provider>
